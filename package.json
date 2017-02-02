@@ -10,6 +10,7 @@
   "author": "Nathan P Hedglin",
   "license": "ISC",
   "dependencies": {
+    "generator-electron": "^1.20.0",
     "robotjs": "^0.4.5"
   }
 }
