@@ -1,4 +1,4 @@
-# Wi-Pi-Dock Desktop App
+# Wi-Pi-Dock Dock App
 
 > My superior app
 

@@ -1,4 +1,4 @@
-# Wi-Pi-Dock Desktop App
+# Wi-Pi-Dock Mobile App
 
 > My superior app
 
