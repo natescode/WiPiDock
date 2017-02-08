@@ -1,5 +1,5 @@
 var net = require('net');
-var HOST = '192.168.1.139';  //the IP of the server local IP
+var HOST = '192.168.x.xxx';  //the IP of the server local IP
 var PORT = 8080; // Port the server is open on
 
 // Connect to the server.
