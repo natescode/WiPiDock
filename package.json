@@ -10,8 +10,10 @@
   "author": "Nathan P Hedglin",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.14.1",
     "generator-electron": "^1.20.0",
     "robotjs": "^0.4.5",
+    "socketio": "^1.0.0",
     "wireless-tools": "^0.19.0"
   }
 }

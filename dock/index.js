@@ -29,19 +29,41 @@
 //     robot.moveMouse(x, y);
 // }
 
-var hostapd = require('wireless-tools/hostapd');
+// var hostapd = require('wireless-tools/hostapd');
+//
+// var options = {
+//     channel: 6,
+//     driver: 'rt2800usb',
+//     hw_mode: 'g',
+//     interface: 'wlx14358b0f2232',
+//     ssid: 'RaspberryPi',
+//     wpa: 2,
+//     wpa_passphrase: 'raspberry'
+// };
+//
+// hostapd.enable(options, function(err) {
+//     // the access point was created
+//     console.log('Wireless Access Point Created Successfully');
+// });
 
-var options = {
-    channel: 6,
-    driver: 'rt2800usb',
-    hw_mode: 'g',
-    interface: 'wlx14358b0f2232',
-    ssid: 'RaspberryPi',
-    wpa: 2,
-    wpa_passphrase: 'raspberry'
-};
+var express = require('express');
+var app = express();
 
-hostapd.enable(options, function(err) {
-    // the access point was created
-    console.log('Wireless Access Point Created Successfully');
+app.get('/getCoords', function (req, res) {
+    var data = {
+        x: 131,
+        y: 72,
+        left_button: true,
+        right_button: false
+    };
+    res.json(data);
+});
+
+var server = app.listen(8081, function () {
+
+    // var host = server.address().address;
+    var host = "localhost";
+    var port = server.address().port;
+
+    console.log("Example app listening at http://%s:%s", host, port);
 });
